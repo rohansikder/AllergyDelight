@@ -14,33 +14,23 @@ namespace AllergyDelight
         {
             InitializeComponent();
 
-
         }
-
-
-
-
 
 
         private async void filter_clicked(object sender, EventArgs e)
         {
 
         }
+
+        //Sends User to Resturants Page
         private async void restaurants_clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new Page1());
         }
         private async void tools_clicked(object sender, EventArgs e)
         {
 
         }
-
-
-
-
-
-
-
 
 
     }

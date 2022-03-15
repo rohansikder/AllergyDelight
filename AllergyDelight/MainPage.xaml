@@ -14,12 +14,6 @@
 
 
 
-
-
-
-
-
-
         <StackLayout x:Name="BG" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Padding="30">
 
             <Button
@@ -40,13 +34,6 @@
 
 
         </StackLayout>
-
-
-
-
-
-
-
 
 
 
@@ -93,6 +80,6 @@
 
 
     </StackLayout>
-    </StackLayout>
+  
 
 </ContentPage>
