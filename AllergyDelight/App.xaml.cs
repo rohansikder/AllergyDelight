@@ -10,7 +10,8 @@ namespace AllergyDelight
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //Used to navigate from One page to another
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
