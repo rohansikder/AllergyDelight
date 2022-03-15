@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AllergyDelight.MainPage" BackgroundColor="Gray">
+
+    <StackLayout>
+
+        <!--Title-->
+        <Label Text="AllergyDelight" FontSize="40" Margin="0,0,0,22" HorizontalOptions="Center" VerticalOptions="Start"/>
+            
+        <!--Buttons-->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="Please Select Ingredients" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="Confirm" FontSize="Small" Margin="10,0,0,23" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button Text="Cancel" FontSize="Small"  HorizontalOptions="Center" VerticalOptions="Start"/>
+        </StackLayout>
+
+        <!--Ingredients-->
+        <StackLayout Orientation="Vertical" HorizontalOptions="Start">
+            <Label Text="Ingredients" FontSize="Title" Margin="45,22" HorizontalOptions="Start" VerticalOptions="Start"/>
+            <Label Text="Carrot" FontSize="Small"  HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="200" VerticalOptions="Start"/>
+            <Label Text="Nuts" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="200" VerticalOptions="Start"/>
+            <Label Text="Milk" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="200" VerticalOptions="Start"/>
+        </StackLayout>
+            
+    
+    </StackLayout>
+
+</ContentPage>
