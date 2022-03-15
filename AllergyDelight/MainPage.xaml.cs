@@ -13,6 +13,35 @@ namespace AllergyDelight
         public MainPage()
         {
             InitializeComponent();
+
+
         }
+
+
+
+
+
+
+        private async void filter_clicked(object sender, EventArgs e)
+        {
+
+        }
+        private async void restaurants_clicked(object sender, EventArgs e)
+        {
+
+        }
+        private async void tools_clicked(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+
+
+
+
+
     }
 }
