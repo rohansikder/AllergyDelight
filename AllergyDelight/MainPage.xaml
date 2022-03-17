@@ -65,8 +65,8 @@
                 <Label  Grid.Column="0" Grid.Row="4" Text="Egg and Cheese McMuffin" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>
                 <Label  Grid.Column="0" Grid.Row="5" Text="Oreo McFlurry" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>
 
-                <Label  Grid.Column="2" Grid.Row="2" Text="V" TextColor="Green" FontSize="Small" Padding="15,0,0,0"/>
-                <Label  Grid.Column="2" Grid.Row="3" Text="V" TextColor="Green" FontSize="Small" Padding="15,0,0,0"/>
+                <Label  Grid.Column="2" Grid.Row="2" Text="VE" TextColor="Orange" FontSize="Small" Padding="15,0,0,0"/>
+                <Label  Grid.Column="2" Grid.Row="5" Text="V" TextColor="Green" FontSize="Small" Padding="15,0,0,0"/>
 
 
 
