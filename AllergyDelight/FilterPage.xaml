@@ -11,17 +11,18 @@
             <!--Buttons-->
             <StackLayout Orientation="Horizontal">
                 <Label Text="Please Select Ingredients"  Margin="30,0,30,23" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Start"/>
-                <Button Text="Confirm" FontSize="Small" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Start"/>
+                <Button x:Name="BtnConfirm" Text="Confirm" FontSize="Small" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Start" Clicked="BtnConfirm_Clicked"/>
                 <Button x:Name="BtnCancel" Text="Cancel" FontSize="Small"  HorizontalOptions="Center" VerticalOptions="Start" Clicked="BtnCancel_Clicked"/>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
                 <Label Text="Ingredients" FontSize="30" Margin="29,26"  HorizontalOptions="Start" VerticalOptions="Start"/>
-                <Button x:Name="BtnSelectAll" Text="Select All" FontSize="Small" Margin="1,30"  WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Start"/>
-                <Button x:Name="BtnDeselectAll" Text="Deselect All" FontSize="Small" Margin="1,30"   HorizontalOptions="Center" VerticalOptions="Start"/>
+                <!--<Button x:Name="BtnSelectAll" Text="Select All" FontSize="Small" Margin="1,30"  WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Start" Clicked="BtnSelectAll_Clicked"/>-->
+                <Button x:Name="BtnDeselectAll" Text="Deselect All" FontSize="Small" Margin="1,30"   HorizontalOptions="Center" VerticalOptions="Start" Clicked="BtnDeselectAll_Clicked"/>
+                
             </StackLayout>
 
-          <Grid BackgroundColor="WhiteSmoke">
+          <Grid x:Name="GrdFilterPage" BackgroundColor="WhiteSmoke">
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
@@ -50,48 +51,6 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-
-                <!--Ingredients-->
-                <Label Text="Wheat" FontSize="Small"  HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300"  Grid.Row="0" Grid.Column="0"/>
-                <Label Text="Rye" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300"  Grid.Row="1" Grid.Column="0"/>
-                <Label Text="Barley" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="2" Grid.Column="0"/>
-                <Label Text="Oats" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="3" Grid.Column="0"/>
-                <Label Text="Spelt" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="4" Grid.Column="0"/>
-                <Label Text="Kamut" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="5" Grid.Column="0"/>
-                <Label Text="Soya" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="6" Grid.Column="0"/>
-                <Label Text="Nuts" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="7" Grid.Column="0"/>
-                <Label Text="Peanuts" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="8" Grid.Column="0"/>
-                <Label Text="Sesame" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="9" Grid.Column="0"/>
-                <Label Text="Milk" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="10" Grid.Column="0"/>
-                <Label Text="Eggs" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="11" Grid.Column="0"/>
-                <Label Text="Fish" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="12" Grid.Column="0"/>
-                <Label Text="Crustaceans" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="13" Grid.Column="0"/>
-                <Label Text="Celery" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="14" Grid.Column="0"/>
-                <Label Text="Sulphur Dioxide And Sulphites" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="15" Grid.Column="0"/>
-                <Label Text="Mustard" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="16" Grid.Column="0"/>
-                <Label Text="Molluscs" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="17" Grid.Column="0"/>
-                <Label Text="Lupin" FontSize="Small" HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="300" Grid.Row="18" Grid.Column="0"/>
-                
-                <!--Checkboxes (NOTE MAY NEED TO CONVERT TO C# FOR BETTER LONGTERM PROGRESS)-->
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="0" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="1" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="2" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="3" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="4" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="5" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="6" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="7" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="8" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="9" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="10" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="11" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="12" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="13" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="14" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="15" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="16" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="17" Grid.Column="1"/>
-                <CheckBox IsChecked="False" Color="Blue" Grid.Row="18" Grid.Column="1"/>
 
             </Grid>
           </StackLayout>
