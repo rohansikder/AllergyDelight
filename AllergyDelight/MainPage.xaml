@@ -40,7 +40,7 @@
         <StackLayout >
 
             <Grid   
-            x:Name="menuarea" StyleId="menu" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="500" WidthRequest="500" BackgroundColor="WhiteSmoke"    >
+            x:Name="GrdMenuArea" StyleId="menu" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="500" WidthRequest="500" BackgroundColor="WhiteSmoke"    >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -55,18 +55,23 @@
                     <RowDefinition />
                     <RowDefinition />
                     <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
                 </Grid.RowDefinitions>
 
-                <Label  Grid.Column="1" Text="Menu" TextColor="Black" FontSize="Header"/>
+                <Label x:Name="MenuTitle" Grid.Column="1" Grid.Row="0" Text="Menu" TextColor="Black" FontSize="Header"/>
 
-                <Label  Grid.Column="0" Grid.Row="1" Text="Big Mac" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>
-                <Label  Grid.Column="0" Grid.Row="2" Text="McPlant" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>
-                <Label  Grid.Column="0" Grid.Row="3" Text="The Spicy Veggie One" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>
-                <Label  Grid.Column="0" Grid.Row="4" Text="Egg and Cheese McMuffin" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>
-                <Label  Grid.Column="0" Grid.Row="5" Text="Oreo McFlurry" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>
-
-                <Label  Grid.Column="2" Grid.Row="2" Text="VE" TextColor="Orange" FontSize="Small" Padding="15,0,0,0"/>
-                <Label  Grid.Column="2" Grid.Row="5" Text="V" TextColor="Green" FontSize="Small" Padding="15,0,0,0"/>
+                <!--Anthonys Old Code (Code now works in C#)-->
+                <!--<Label Grid.Column="0" Grid.Row="1" Text="Big Mac" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>
+                <Label Grid.Column="0" Grid.Row="2" Text="McPlant" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>
+                <Label Grid.Column="0" Grid.Row="3" Text="The Spicy Veggie One" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>
+                <Label Grid.Column="0" Grid.Row="4" Text="Bacon and Cheese McMuffin" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>
+                <Label Grid.Column="0" Grid.Row="5" Text="Oreo McFlurry" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>-->
+    
+                <!--Labels-->
+                <Label x:Name="Vegan1" Grid.Column="2" Grid.Row="2" Text="VE" TextColor="Orange" FontSize="Small" Padding="15,0,0,0"/>
+                <Label x:Name="Vegetarian1" Grid.Column="2" Grid.Row="5" Text="V" TextColor="Green" FontSize="Small" Padding="15,0,0,0"/>
+                <Label x:Name="Vegan2" Grid.Column="2" Grid.Row="3" Text="VE" TextColor="Orange" FontSize="Small" Padding="15,0,0,0"/>
 
 
 
