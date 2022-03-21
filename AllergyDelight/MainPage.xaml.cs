@@ -194,7 +194,7 @@ namespace AllergyDelight
         //Sends User to Resturants Page
         private async void restaurants_clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Page1());
+            await Navigation.PushAsync(new ListPage());
         }
         private async void tools_clicked(object sender, EventArgs e)
         {
