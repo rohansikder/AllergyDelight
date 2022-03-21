@@ -134,6 +134,8 @@
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="McdonaldsMap.png" />
     <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Subway.png" />
+    <Content Include="Supermacs.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
