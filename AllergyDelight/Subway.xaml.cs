@@ -11,11 +11,11 @@ using Xamarin.Forms.Xaml;
 namespace AllergyDelight
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage
+    public partial class Subway : ContentPage
     {
         public ICommand TapCommand => new Command<string>(async (url) => await Launcher.OpenAsync(url));
 
-        public Page1()
+        public Subway()
         {
             InitializeComponent();
             BindingContext = this;
@@ -26,7 +26,6 @@ namespace AllergyDelight
             await Navigation.PushAsync(new FilterPage());
         }
 
-        //Send user to HomePage
         async private void BackToHomeClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());

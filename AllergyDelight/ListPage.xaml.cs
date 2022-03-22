@@ -24,7 +24,6 @@ namespace AllergyDelight
         }
 
 
-
         //Sends User to Resturants Page
         private async void menu_clicked(object sender, EventArgs e)
         {
@@ -34,6 +33,7 @@ namespace AllergyDelight
         {
 
         }
+
 
         private async void mcdoanlds1_clicked(object sender, EventArgs e)
         {
@@ -56,3 +56,5 @@ namespace AllergyDelight
         }
     }
 }
+
+

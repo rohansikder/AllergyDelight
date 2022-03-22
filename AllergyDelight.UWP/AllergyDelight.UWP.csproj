@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -138,6 +138,24 @@
     <Content Include="MCDONALDSSMYTHS.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Supermacs-Headford-Road.jpg" />
+    <Content Include="Celery.jpg" />
+    <Content Include="Crustacean.jpg" />
+    <Content Include="Eggs.jpg" />
+    <Content Include="Fish.jpg" />
+    <Content Include="Gluten.jpg" />
+    <Content Include="Lupins.jpg" />
+    <Content Include="McdonaldsMap.png" />
+    <Content Include="Milk.jpg" />
+    <Content Include="Mustard.jpg" />
+    <Content Include="Nuts.jpg" />
+    <Content Include="Peanuts.jpg" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Sesame.jpg" />
+    <Content Include="Shellfish.jpg" />
+    <Content Include="Soya.jpg" />
+    <Content Include="Subway.png" />
+    <Content Include="Sulphate.jpg" />
+    <Content Include="Supermacs.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

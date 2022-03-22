@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AllergyDelight.Page1"
+             x:Class="AllergyDelight.Supermacs"
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <StackLayout>
 
             <Frame BackgroundColor="Red" Padding="10" CornerRadius="0">
-                <Label Text="McDonald's" HorizontalTextAlignment="Center" TextColor="White" FontSize="26"/>
+                <Label Text="Supermac's" HorizontalTextAlignment="Center" TextColor="White" FontSize="26"/>
             </Frame>
 
-            <ImageButton Source="McdonaldsMap.png"></ImageButton>
+            <ImageButton Source="Supermacs.png"></ImageButton>
             <!--I will make Button redirect to Google Maps if user wants to open in native google maps-->
 
             <StackLayout Padding="20">
@@ -18,27 +18,25 @@
                 <Label Text="Resturant Info:" HorizontalTextAlignment="Start" FontSize="23"/>
                 <Button Text="Menu" HorizontalOptions="Start" Font="20" Padding="5" Clicked="BackToHomeClicked"/>
                 <Button Text="Ingredients" HorizontalOptions="Start" Font="20" Padding="5" Clicked="filter_clicked"/>
-                <Label Text="Location - McDonald's Galway - 36 Shop Street" HorizontalTextAlignment="Start" FontSize="15" Margin="0,20,10,10"/>
-                <Label Text="Phone Number -  (091) 563 020" HorizontalTextAlignment="Start" FontSize="15"  Margin="0,10,10,10"/>
-                <Label Text="Website:" HorizontalTextAlignment="Start" FontSize="15"  Margin="0,10,10,0"/>
+                <Label Text="Location - Galway Shopping Centre, Headford Rd, Galway, H91 R792" HorizontalTextAlignment="Start" FontSize="15" Margin="0,20,10,10"/>
+                <Label Text="Phone Number - (091) 563660" HorizontalTextAlignment="Start" FontSize="15"  Margin="0,10,10,10"/>
+                <Label Text="Website" HorizontalTextAlignment="Start" FontSize="15"  Margin="0,10,10,0"/>
 
                 <!--HyperLink-->
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="https://www.mcdonalds.com/ie/en-ie.html" TextColor="Blue" FontSize="15">
+                            <Span Text="http://www.supermacs.ie/" TextColor="Blue" FontSize="15">
                                 <Span.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="https://www.mcdonalds.com/ie/en-ie.html"/>
+                                    <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="http://www.supermacs.ie/"/>
                                 </Span.GestureRecognizers>
                             </Span>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                
+
             </StackLayout>
-            
+
         </StackLayout>
     </ContentPage.Content>
-    
-    
 </ContentPage>
