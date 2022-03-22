@@ -37,22 +37,17 @@ namespace AllergyDelight
 
         private async void mcdoanlds1_clicked(object sender, EventArgs e)
         {
-
-        }
-
-        private async void mcdoanlds2_clicked(object sender, EventArgs e)
-        {
-
+            await Navigation.PushAsync(new Page1());
         }
 
         private async void supermacs1_clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new Supermacs());
         }
 
         private async void subway1_clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new Subway());
         }
     }
 }

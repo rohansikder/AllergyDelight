@@ -8,8 +8,6 @@
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#ff99cc" Padding="10"
                  HeightRequest="1600" WidthRequest="1200" Spacing="0" Orientation="Vertical">
 
-
-
             <Frame BackgroundColor="LightSeaGreen" Padding="24" CornerRadius="0">
                 <Label Text="List Of Available Resturants:" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </Frame>
@@ -42,8 +40,6 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition />
                         <ColumnDefinition />
-                        <ColumnDefinition />
-
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition />
@@ -56,29 +52,22 @@
 
 
                     <Button
-                    Text="(McDonalds) Eyre Square - Galway" TextColor="black" Padding="0" BorderWidth="3" Grid.Column="0" HorizontalOptions="End" BorderColor="Gray"  WidthRequest="395"
-                    Font="Comic Sans ms" FontSize="Small" Clicked="mcdoanlds1_clicked" >
+                    Text="(McDonalds) Eyre Square - Galway" TextColor="black" Padding="0" BorderWidth="3" HorizontalOptions="End" BorderColor="Gray"  WidthRequest="395"
+                    Font="Comic Sans ms" FontSize="13" Clicked="mcdoanlds1_clicked" Grid.Row="0" Grid.Column="1" Margin="5">
                     </Button>
-                    <Image Source="MCDONALD TOWN.jpg" Grid.Column="0" HorizontalOptions="Start"></Image>
+                    <ImageButton Source="MCDONALD TOWN.jpg" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Margin="5"  Clicked="mcdoanlds1_clicked"></ImageButton>
 
                     <Button
-                    Text="(McDonalds) Retail Park - Galway" TextColor="black" Padding="0" BorderWidth="3" Grid.Column="0" Grid.Row="1" HorizontalOptions="End" BorderColor="Gray"  WidthRequest="340"
-                    Font="Comic Sans ms" FontSize="Small" Clicked="mcdoanlds2_clicked" >
+                    Text="(SuperMacs) Galway Shopping Center"  TextColor="black" Padding="0" BorderWidth="3" HorizontalOptions="End" BorderColor="Gray"  WidthRequest="365"
+                    Font="Comic Sans ms" FontSize="12" Clicked="supermacs1_clicked" Grid.Row="1" Grid.Column="1" Margin="4">
                     </Button>
-                    <Image Source="MCDONALDSSMYTHS.jpg" Grid.Row="1" HorizontalOptions="StartAndExpand" WidthRequest="160"  ></Image>
+                    <ImageButton Source="Supermacs-Headford-Road.jpg" Grid.Row="1" Grid.Column="0"  VerticalOptions="Center" HorizontalOptions="Center" Margin="5" Clicked="supermacs1_clicked"></ImageButton>
 
                     <Button
-                    Text="(SuperMacs) Galway Shopping Center" TextColor="black" Padding="0" BorderWidth="3" Grid.Column="0" Grid.Row="2" HorizontalOptions="End" BorderColor="Gray"  WidthRequest="365"
-                    Font="Comic Sans ms" FontSize="Small" Clicked="supermacs1_clicked">
+                    Text="(Subway) Newcastle Rd - Galway" TextColor="black" Padding="0" BorderWidth="3" HorizontalOptions="End" BorderColor="Gray"  WidthRequest="399"
+                    Font="Comic Sans ms" FontSize="14" Clicked="subway1_clicked" Grid.Row="2" Grid.Column="1" Margin="4">
                     </Button>
-                    <Image Source="Supermacs-Headford-Road.jpg" Grid.Row="2" HorizontalOptions="Start" WidthRequest="134"></Image>
-
-                    <Button
-                    Text="(Subway) Newcastle Rd - Galway" TextColor="black" Padding="0" BorderWidth="3" Grid.Column="0" Grid.Row="3" HorizontalOptions="End" BorderColor="Gray"  WidthRequest="399"
-                    Font="Comic Sans ms" FontSize="Small" Clicked="subway1_clicked" >
-                    </Button>
-                    <Image Source="LONDASSUBWAY.jpg" Grid.Row="3" HorizontalOptions="Start" WidthRequest="100"></Image>
-
+                    <ImageButton Source="LONDASSUBWAY.jpg" Grid.Row="2" Grid.Column="0" WidthRequest="100" VerticalOptions="Center" HorizontalOptions="Center" Clicked="subway1_clicked"></ImageButton>
 
                 </Grid>
 
