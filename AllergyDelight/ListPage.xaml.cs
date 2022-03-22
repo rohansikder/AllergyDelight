@@ -15,12 +15,14 @@ namespace AllergyDelight
         public ListPage()
         {
             InitializeComponent();
+
         }
 
         private async void filter_clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new FilterPage());
         }
+
 
         //Sends User to Resturants Page
         private async void menu_clicked(object sender, EventArgs e)
@@ -31,5 +33,28 @@ namespace AllergyDelight
         {
 
         }
+
+
+        private async void mcdoanlds1_clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void mcdoanlds2_clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void supermacs1_clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void subway1_clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
+

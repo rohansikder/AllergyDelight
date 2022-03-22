@@ -11,6 +11,7 @@
             <Label Text="Welcome to Allergy Delight!" HorizontalTextAlignment="Center" TextColor="AliceBlue" FontSize="36"/>
         </Frame>
 
+
         <StackLayout x:Name="BG" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Padding="30">
 
             <Button
@@ -32,10 +33,12 @@
         </StackLayout>
 
 
+
         <StackLayout>
 
             <Grid   
             x:Name="GrdMenuArea" StyleId="menu" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="625" WidthRequest="600" BackgroundColor="White">
+
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -52,6 +55,7 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
 
+
                 <Label x:Name="MenuTitle" Grid.ColumnSpan="6" Grid.RowSpan="1" Text="Menu" TextColor="Black" FontSize="55" HorizontalTextAlignment="Center"/>
 
                 <!--Anthonys Old Code (Code now works in C#)-->
@@ -60,7 +64,7 @@
                 <Label Grid.Column="0" Grid.Row="3" Text="The Spicy Veggie One" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>
                 <Label Grid.Column="0" Grid.Row="4" Text="Bacon and Cheese McMuffin" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>
                 <Label Grid.Column="0" Grid.Row="5" Text="Oreo McFlurry" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>-->
-    
+
                 <!--Labels-->
                 <!--Big Mac-->
                 <Image Source="Gluten.jpg"  Grid.Column="1" Grid.Row="1" Scale=".8" ></Image>
@@ -86,11 +90,12 @@
                 <Image Source="Soya.jpg"  Grid.Column="4" Grid.Row="5" Scale=".8"></Image>
                 <Image Source="Milk.jpg"  Grid.Column="3" Grid.Row="5" Scale=".8"></Image>
                 <Label x:Name="Vegetarian1" Grid.Column="2" Grid.Row="5" Text="V" TextColor="Green" FontSize="Small" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                                              
+
             </Grid>
             
         </StackLayout>
 
     </StackLayout>
-  
+
+
 </ContentPage>
