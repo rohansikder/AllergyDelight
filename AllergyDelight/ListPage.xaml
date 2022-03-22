@@ -55,13 +55,13 @@
                     Text="(McDonalds) Eyre Square - Galway" TextColor="black" Padding="0" BorderWidth="3" HorizontalOptions="End" BorderColor="Gray"  WidthRequest="395"
                     Font="Comic Sans ms" FontSize="13" Clicked="mcdoanlds1_clicked" Grid.Row="0" Grid.Column="1" Margin="5">
                     </Button>
-                    <ImageButton Source="MCDONALD TOWN.jpg" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Margin="5"  Clicked="mcdoanlds1_clicked"></ImageButton>
+                    <ImageButton Source="MCDONALDTOWN.jpg" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Margin="5"  Clicked="mcdoanlds1_clicked"></ImageButton>
 
                     <Button
                     Text="(SuperMacs) Galway Shopping Center"  TextColor="black" Padding="0" BorderWidth="3" HorizontalOptions="End" BorderColor="Gray"  WidthRequest="365"
                     Font="Comic Sans ms" FontSize="12" Clicked="supermacs1_clicked" Grid.Row="1" Grid.Column="1" Margin="4">
                     </Button>
-                    <ImageButton Source="Supermacs-Headford-Road.jpg" Grid.Row="1" Grid.Column="0"  VerticalOptions="Center" HorizontalOptions="Center" Margin="5" Clicked="supermacs1_clicked"></ImageButton>
+                    <ImageButton Source="SupermacsHeadfordRoad.jpg" Grid.Row="1" Grid.Column="0"  VerticalOptions="Center" HorizontalOptions="Center" Margin="5" Clicked="supermacs1_clicked"></ImageButton>
 
                     <Button
                     Text="(Subway) Newcastle Rd - Galway" TextColor="black" Padding="0" BorderWidth="3" HorizontalOptions="End" BorderColor="Gray"  WidthRequest="399"

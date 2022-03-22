@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -88,7 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Supermacs.png" />
-
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AllergyDelight\AllergyDelight.csproj">
@@ -100,10 +99,10 @@
     <AndroidResource Include="Resources\drawable\McdonaldsMap.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\MCDONALD TOWN.jpg" />
+    <AndroidResource Include="Resources\drawable\MCDONALDTOWN.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Supermacs-Headford-Road.jpg" />
+    <AndroidResource Include="Resources\drawable\SupermacsHeadfordRoad.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\MCDONALDSSMYTHS.jpg" />
