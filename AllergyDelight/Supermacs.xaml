@@ -20,7 +20,20 @@
                 <Label Text="Location - Galway Shopping Centre, Headford Rd, Galway, H91 R792" HorizontalTextAlignment="Start" FontSize="15" Margin="0,20,10,10"/>
                 <Label Text="Phone Number - (091) 563660" HorizontalTextAlignment="Start" FontSize="15"  Margin="0,10,10,10"/>
                 <Label Text="Website" HorizontalTextAlignment="Start" FontSize="15"  Margin="0,10,10,0"/>
-                <Label Text="http://www.supermacs.ie/" HorizontalTextAlignment="Start" FontSize="15"  Margin="0,0,10,0"/>
+
+                <!--HyperLink-->
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="http://www.supermacs.ie/" TextColor="Blue" FontSize="15">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="http://www.supermacs.ie/"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
             </StackLayout>
 
         </StackLayout>

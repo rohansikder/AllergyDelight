@@ -19,8 +19,21 @@
                 <Button Text="Ingredients" HorizontalOptions="Start" Font="20" Padding="5" Clicked="filter_clicked"/>
                 <Label Text="Location - McDonald's Galway - 36 Shop Street" HorizontalTextAlignment="Start" FontSize="15" Margin="0,20,10,10"/>
                 <Label Text="Phone Number -  (091) 563 020" HorizontalTextAlignment="Start" FontSize="15"  Margin="0,10,10,10"/>
-                <Label Text="Website" HorizontalTextAlignment="Start" FontSize="15"  Margin="0,10,10,0"/>
-                <Label Text="https://www.mcdonalds.com/ie/en-ie.html" HorizontalTextAlignment="Start" FontSize="15"  Margin="0,0,10,0"/>
+                <Label Text="Website:" HorizontalTextAlignment="Start" FontSize="15"  Margin="0,10,10,0"/>
+
+                <!--HyperLink-->
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="https://www.mcdonalds.com/ie/en-ie.html" TextColor="Blue" FontSize="15">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="https://www.mcdonalds.com/ie/en-ie.html"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                
             </StackLayout>
             
         </StackLayout>
