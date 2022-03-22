@@ -20,7 +20,20 @@
                 <Label Text="Location - Planet Leisure Entertainment Centre, Galway Shopping Centre Bowling Alley, Leisure Centre, Galway, H91 KVT7" HorizontalTextAlignment="Start" FontSize="15" Margin="0,20,10,10"/>
                 <Label Text="Phone Number -  (091) 562820" HorizontalTextAlignment="Start" FontSize="15"  Margin="0,10,10,10"/>
                 <Label Text="Website" HorizontalTextAlignment="Start" FontSize="15"  Margin="0,10,10,0"/>
-                <Label Text="https://www.subway.com/en-IE/" HorizontalTextAlignment="Start" FontSize="15"  Margin="0,0,10,0"/>
+   
+                <!--HyperLink-->
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="https://www.subway.com/en-IE/" TextColor="Blue" FontSize="15">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="https://www.subway.com/en-IE/"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
             </StackLayout>
 
         </StackLayout>
