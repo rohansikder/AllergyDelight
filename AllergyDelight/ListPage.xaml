@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AllergyDelight.ListPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#ff99cc" Padding="10"
+                 HeightRequest="1600" WidthRequest="1200" Spacing="0" Orientation="Vertical">
+
+
+
+            <Frame BackgroundColor="LightSeaGreen" Padding="24" CornerRadius="0">
+                <Label Text="List Of Available Resturants:" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+
+            <StackLayout x:Name="BG" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Padding="30">
+
+                <Button
+                Text="Fliter" TextColor="black" Padding="0" BorderWidth="10" 
+                 Font="Comic Sans ms" FontSize="Small" Clicked="filter_clicked">
+                </Button>
+
+                <Button
+                Text="Food Menu" TextColor="black" Padding="0" BorderWidth="10" 
+                 Font="Comic Sans ms" FontSize="Small" Clicked="menu_clicked">
+                </Button>
+
+                <Button
+                Text="Tools" TextColor="black" Padding="0" BorderWidth="10" 
+                 Font="Comic Sans ms" FontSize="Small" Clicked="tools_clicked">
+                </Button>
+
+            </StackLayout>
+
+
+
+            <StackLayout >
+
+                <Grid x:Name="GrdMenuArea" StyleId="menu" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="500" WidthRequest="500" BackgroundColor="WhiteSmoke">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+
+
+
+                    <Button
+                    Text="(McDonalds) Eyre Square - Galway" TextColor="black" Padding="0" BorderWidth="3" Grid.Column="0" HorizontalOptions="End" BorderColor="Gray"  WidthRequest="395"
+                    Font="Comic Sans ms" FontSize="Small" Clicked="mcdoanlds1_clicked" >
+                    </Button>
+                    <Image Source="MCDONALD TOWN.jpg" Grid.Column="0" HorizontalOptions="Start"></Image>
+
+                    <Button
+                    Text="(McDonalds) Retail Park - Galway" TextColor="black" Padding="0" BorderWidth="3" Grid.Column="0" Grid.Row="1" HorizontalOptions="End" BorderColor="Gray"  WidthRequest="340"
+                    Font="Comic Sans ms" FontSize="Small" Clicked="mcdoanlds2_clicked" >
+                    </Button>
+                    <Image Source="MCDONALDSSMYTHS.jpg" Grid.Row="1" HorizontalOptions="StartAndExpand" WidthRequest="160"  ></Image>
+
+                    <Button
+                    Text="(SuperMacs) Galway Shopping Center" TextColor="black" Padding="0" BorderWidth="3" Grid.Column="0" Grid.Row="2" HorizontalOptions="End" BorderColor="Gray"  WidthRequest="365"
+                    Font="Comic Sans ms" FontSize="Small" Clicked="supermacs1_clicked">
+                    </Button>
+                    <Image Source="Supermacs-Headford-Road.jpg" Grid.Row="2" HorizontalOptions="Start" WidthRequest="134"></Image>
+
+                    <Button
+                    Text="(Subway) Newcastle Rd - Galway" TextColor="black" Padding="0" BorderWidth="3" Grid.Column="0" Grid.Row="3" HorizontalOptions="End" BorderColor="Gray"  WidthRequest="399"
+                    Font="Comic Sans ms" FontSize="Small" Clicked="subway1_clicked" >
+                    </Button>
+                    <Image Source="LONDASSUBWAY.jpg" Grid.Row="3" HorizontalOptions="Start" WidthRequest="100"></Image>
+
+
+
+
+
+
+
+
+
+                </Grid>
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -132,8 +132,12 @@
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="LONDASSUBWAY.jpg" />
+    <Content Include="MCDONALD TOWN.jpg" />
     <Content Include="McdonaldsMap.png" />
+    <Content Include="MCDONALDSSMYTHS.jpg" />
     <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Supermacs-Headford-Road.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
