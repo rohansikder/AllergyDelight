@@ -5,10 +5,10 @@
              NavigationPage.HasNavigationBar="false">
 
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#ff99cc" Padding="10"
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Gray" Padding="10"
                  HeightRequest="1600" WidthRequest="1200" Spacing="0" Orientation="Vertical">
 
-            <Frame BackgroundColor="LightSeaGreen" Padding="24" CornerRadius="0">
+            <Frame BackgroundColor="DodgerBlue" Padding="24" CornerRadius="15">
                 <Label Text="List Of Available Resturants:" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </Frame>
 
