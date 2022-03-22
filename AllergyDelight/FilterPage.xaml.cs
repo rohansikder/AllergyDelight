@@ -84,9 +84,11 @@ namespace AllergyDelight
                 ingredientLabels[row].SetValue(Grid.RowProperty, row);
                 ingredientLabels[row].SetValue(Grid.ColumnProperty, 0);
                 ingredientLabels[row].Text = ingredientNames[row];
+                ingredientLabels[row].HorizontalTextAlignment = TextAlignment.Center;
+                ingredientLabels[row].VerticalTextAlignment = TextAlignment.Center;
                 ingredientLabels[row].FontSize = Device.GetNamedSize(NamedSize.Small, ingredientLabels[row]);
                 ingredientLabels[row].HorizontalOptions = LayoutOptions.Center;
-                ingredientLabels[row].BackgroundColor = Color.Orange;
+                ingredientLabels[row].BackgroundColor = Color.DodgerBlue;
                 ingredientLabels[row].WidthRequest = 300;
                 GrdFilterPage.Children.Add(ingredientLabels[row]);
             }
@@ -99,7 +101,7 @@ namespace AllergyDelight
                 checkBoxes[row] = new CheckBox();
                 checkBoxes[row].SetValue(Grid.RowProperty, row);
                 checkBoxes[row].SetValue(Grid.ColumnProperty, 1);
-                checkBoxes[row].Color = Color.Blue;
+                checkBoxes[row].Color = Color.DodgerBlue;
                 checkBoxes[row].IsChecked = false;
                 checkBoxes[row].CheckedChanged += OnCheckBoxCheckedChanged;
                 GrdFilterPage.Children.Add(checkBoxes[row]);

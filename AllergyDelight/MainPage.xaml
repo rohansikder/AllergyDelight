@@ -4,28 +4,28 @@
              x:Class="AllergyDelight.MainPage"
              NavigationPage.HasNavigationBar="false">
 
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#ff99cc" Padding="10"
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightGray" Padding="10"
                  HeightRequest="1600" WidthRequest="1200" Spacing="0" Orientation="Vertical">
 
-        <Frame BackgroundColor="LightSeaGreen" Padding="24" CornerRadius="0">
+        <Frame BackgroundColor="DodgerBlue" Padding="15" CornerRadius="15">
             <Label Text="Welcome to Allergy Delight!" HorizontalTextAlignment="Center" TextColor="AliceBlue" FontSize="36"/>
         </Frame>
 
         <StackLayout x:Name="BG" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Padding="30">
 
             <Button
-                Text="Fliter" TextColor="black" Padding="0" BorderWidth="10" 
-                 Font="Comic Sans ms" FontSize="Small" Clicked="filter_clicked">
+                Text="Fliter" TextColor="black" Padding="10" BorderWidth="10" 
+                 Font="Comic Sans ms" FontSize="Small" CornerRadius="10" Clicked="filter_clicked">
 
             </Button>
             <Button
-                Text="Restaurants" TextColor="black" Padding="0" BorderWidth="10" 
-                 Font="Comic Sans ms" FontSize="Small" Clicked="restaurants_clicked">
+                Text="Restaurants" TextColor="black" Padding="10" BorderWidth="10" 
+                 Font="Comic Sans ms" FontSize="Small" CornerRadius="10" Clicked="restaurants_clicked">
 
             </Button>
             <Button
-                Text="Tools" TextColor="black" Padding="0" BorderWidth="10" 
-                 Font="Comic Sans ms" FontSize="Small" Clicked="tools_clicked">
+                Text="Tools" TextColor="black" Padding="10" BorderWidth="10" 
+                 Font="Comic Sans ms" FontSize="Small"  CornerRadius="10" Clicked="tools_clicked">
 
             </Button>
 
@@ -35,7 +35,7 @@
         <StackLayout>
 
             <Grid   
-            x:Name="GrdMenuArea" StyleId="menu" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="600" WidthRequest="600" BackgroundColor="White"    >
+            x:Name="GrdMenuArea" StyleId="menu" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="625" WidthRequest="600" BackgroundColor="White">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -52,7 +52,7 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
 
-                <Label x:Name="MenuTitle" Grid.ColumnSpan="6" Grid.RowSpan="1" Text="Menu" TextColor="Black" FontSize="Header" HorizontalTextAlignment="Center"/>
+                <Label x:Name="MenuTitle" Grid.ColumnSpan="6" Grid.RowSpan="1" Text="Menu" TextColor="Black" FontSize="55" HorizontalTextAlignment="Center"/>
 
                 <!--Anthonys Old Code (Code now works in C#)-->
                 <!--<Label Grid.Column="0" Grid.Row="1" Text="Big Mac" TextColor="Black" FontSize="Small" Padding="15,0,0,0"/>
