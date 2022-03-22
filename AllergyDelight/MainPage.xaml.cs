@@ -177,8 +177,10 @@ namespace AllergyDelight
                 menuFoodLabels[count].SetValue(Grid.RowProperty, row + ROW_MULTIPLIER);
                 menuFoodLabels[count].SetValue(Grid.ColumnProperty, 0);
                 menuFoodLabels[count].Text = foodNames[count];
+                menuFoodLabels[count].HorizontalTextAlignment = TextAlignment.Center;
+                menuFoodLabels[count].VerticalTextAlignment = TextAlignment.Center;
                 menuFoodLabels[count].TextColor = Color.Black;
-                menuFoodLabels[count].Padding = new Thickness(10, 0, 0, 0);
+                menuFoodLabels[count].Padding = new Thickness(5, 0, 0, 0);
                 menuFoodLabels[count].FontSize = Device.GetNamedSize(NamedSize.Small, menuFoodLabels[count]);
                 menuFoodLabels[count].HorizontalOptions = LayoutOptions.Center;
                 GrdMenuArea.Children.Add(menuFoodLabels[count]);
