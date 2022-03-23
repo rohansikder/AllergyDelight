@@ -56,6 +56,12 @@ namespace AllergyDelight
 
         private void CheckMenu(string ingredientToCheck)
         {
+            int bigMac = 1;
+            int mcFlurryOreo= 2;
+            int baconAndEgg = 3;
+            int mcPlant = 4;
+            int spicyVeggie = 5;
+
             if (ingredientToCheck == ingredientNames[0]
                 || ingredientToCheck == ingredientNames[10])//if the ingredient is wheat or milk
             {
@@ -67,6 +73,13 @@ namespace AllergyDelight
                 Vegan1.IsVisible = false;
                 Vegan2.IsVisible = false;
                 Vegetarian1.IsVisible = false;
+
+                DisableStickers(bigMac);
+                DisableStickers(mcFlurryOreo);
+                DisableStickers(baconAndEgg);
+                DisableStickers(mcPlant);
+                DisableStickers(spicyVeggie);
+
                 MenuTitle.FontSize = Device.GetNamedSize(NamedSize.Small, MenuTitle);
                 MenuTitle.Text = "There is nothing on the menu. Please go back..";
             }
@@ -75,6 +88,8 @@ namespace AllergyDelight
                 //MCflurry
                 menuFoodLabels[4].IsVisible = false;
                 Vegetarian1.IsVisible = false;
+
+                DisableStickers(mcFlurryOreo);
 
             } else if (ingredientToCheck == ingredientNames[2])  //if ingred is Barley
             {
@@ -90,18 +105,26 @@ namespace AllergyDelight
                 Vegan1.IsVisible = false;
                 Vegan2.IsVisible = false;
                 Vegetarian1.IsVisible = false;
+
+                DisableStickers(bigMac);
+                DisableStickers(mcFlurryOreo);
+                DisableStickers(mcPlant);
+                DisableStickers(spicyVeggie);
             }
             else if (ingredientToCheck == ingredientNames[3]) //if ingred is oats
             {
                 menuFoodLabels[4].IsVisible = false;
                 Vegetarian1.IsVisible = false;
+
+                DisableStickers(mcFlurryOreo);
+              
             }
-            else if (ingredientToCheck == ingredientNames[1]) //if ingred is rye
+            else if (ingredientToCheck == ingredientNames[1]) //if ingred is rye 
             {
               
                 for (int count = 0; count < menuFoodLabels.Length; count++)
                 {
-                    if (count != 4) //if the current food is not flurryOreo
+                    if (count != 4) //if the current food is not flurryOreo 
                     {
                         menuFoodLabels[count].IsVisible = false;
                     }
@@ -110,8 +133,14 @@ namespace AllergyDelight
 
                 Vegan1.IsVisible = false;
                 Vegan2.IsVisible = false;
+
+                DisableStickers(bigMac);
+                DisableStickers(baconAndEgg);
+                DisableStickers(mcPlant);
+                DisableStickers(spicyVeggie);
+
             }
-            else if (ingredientToCheck == ingredientNames[11]) //if ingred is eggs
+            else if (ingredientToCheck == ingredientNames[11]) //if ingred is eggs 
             {
                 //For bacon and big mac
                 for (int count = 0; count < menuFoodLabels.Length; count++)
@@ -129,14 +158,20 @@ namespace AllergyDelight
                     Vegan2.IsVisible = false;
                     Vegetarian1.IsVisible = false;
 
+                    
+                    DisableStickers(mcFlurryOreo);
+                    DisableStickers(mcPlant);
+                    DisableStickers(spicyVeggie);
+
+
                 }
             }
-            else if (ingredientToCheck == ingredientNames[9]) //if ingred is sesame
+            else if (ingredientToCheck == ingredientNames[9]) //if ingred is sesame 
             {
                 
                 for (int count = 0; count < menuFoodLabels.Length; count++)
                 {
-                    if (count != 4) 
+                    if (count != 4)  //if the current food is not flurryOreo 
                     {
                         menuFoodLabels[count].IsVisible = false;
                     }
@@ -145,8 +180,15 @@ namespace AllergyDelight
 
                 Vegan1.IsVisible = false;
                 Vegan2.IsVisible = false;
+
+                DisableStickers(bigMac);
+                DisableStickers(baconAndEgg);
+                DisableStickers(mcPlant);
+                DisableStickers(spicyVeggie);
+                
+               
             }
-            else if (ingredientToCheck == ingredientNames[16]) //if ingred is mustard
+            else if (ingredientToCheck == ingredientNames[16]) //if ingred is mustard 
             {
                 for (int count = 0; count < menuFoodLabels.Length; count++)
                 {
@@ -163,7 +205,48 @@ namespace AllergyDelight
 
                 Vegan1.IsVisible = false;
                 Vegan2.IsVisible = false;
+
+                DisableStickers(bigMac);
+                DisableStickers(mcPlant);
+                DisableStickers(spicyVeggie);
             }
+        }
+
+        private void DisableStickers(int food)
+        {
+           
+            if (food == 1)
+            {
+                BigMacImg1.IsVisible = false;
+                BigMacImg2.IsVisible = false;
+                BigMacImg3.IsVisible = false;
+                BigMacImg4.IsVisible = false;
+                BigMacImg5.IsVisible = false;
+            }
+            else if(food == 2)
+            {
+                OreoMcFlurryImg1.IsVisible = false;
+                OreoMcFlurryImg2.IsVisible = false;
+                OreoMcFlurryImg3.IsVisible = false;
+            }
+            else if(food == 3)
+            {
+                BaconAndEggImg1.IsVisible = false;
+                BaconAndEggImg2.IsVisible = false;
+                BaconAndEggImg3.IsVisible = false;
+            }
+            else if(food == 4)
+            {
+                McPlantImg1.IsVisible = false;
+                McPlantImg2.IsVisible = false;
+                
+            }
+            else if(food == 5)
+            {
+                SpicyVeggieImg1.IsVisible = false;
+                SpicyVeggieImg2.IsVisible = false;
+            }
+           
         }
 
         private void CreateMenu()
