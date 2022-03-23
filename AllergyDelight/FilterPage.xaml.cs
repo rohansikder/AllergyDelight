@@ -75,6 +75,7 @@ namespace AllergyDelight
             CreateFoodLbls();
         }
 
+        
 
         private void CreateFoodLbls()
         {
@@ -161,13 +162,13 @@ namespace AllergyDelight
         //    }
         //}
 
-        private void BtnDeselectAll_Clicked(object sender, EventArgs e)
-        {
-            for (int row = 0; row < checkBoxes.Length; row++)
-            {
-                checkBoxes[row].IsChecked = false;
-            }
-        }
+        //private void BtnDeselectAll_Clicked(object sender, EventArgs e)
+        //{
+        //    for (int row = 0; row < checkBoxes.Length; row++)
+        //    {
+        //        checkBoxes[row].IsChecked = false;
+        //    }
+        //}
 
       
         private async void BtnConfirm_Clicked(object sender, EventArgs e)
