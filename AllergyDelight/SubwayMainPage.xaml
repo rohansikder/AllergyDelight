@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AllergyDelight.SubwayMainPage"
+             NavigationPage.HasNavigationBar="false">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightGray" Padding="10"
+                 HeightRequest="1600" WidthRequest="1200" Spacing="0" Orientation="Vertical">
+
+        <Frame BackgroundColor="DodgerBlue" Padding="15" CornerRadius="15">
+            <Label Text="Welcome to the Subway Menu!" HorizontalTextAlignment="Center" TextColor="AliceBlue" FontSize="36"/>
+        </Frame>
+
+
+        <StackLayout x:Name="BG" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Padding="30">
+
+            <Button
+                Text="Fliter" TextColor="black" Padding="10" BorderWidth="10" 
+                 Font="Comic Sans ms" FontSize="Small" CornerRadius="10" Clicked="filter_clicked">
+
+            </Button>
+            <Button
+                Text="Restaurant" TextColor="black" Padding="10" BorderWidth="10" 
+                 Font="Comic Sans ms" FontSize="Small" CornerRadius="10" Clicked="restaurants_clicked">
+
+            </Button>
+            <Button
+                Text="Brands" TextColor="black" Padding="10" BorderWidth="10" 
+                 Font="Comic Sans ms" FontSize="Small"  CornerRadius="10" Clicked="brand_clicked">
+
+            </Button>
+
+        </StackLayout>
+
+
+
+        <StackLayout>
+            <ScrollView>
+                <Grid   
+            x:Name="GrdMenuArea" StyleId="menu" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="625" WidthRequest="600" BackgroundColor="White">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+
+                    <Label x:Name="MenuTitle" Grid.ColumnSpan="6" Grid.RowSpan="1" Text="Menu" TextColor="Black" FontSize="55" HorizontalTextAlignment="Center"/>
+
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+
+    </StackLayout>
+
+
+</ContentPage>

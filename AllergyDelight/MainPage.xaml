@@ -8,7 +8,7 @@
                  HeightRequest="1600" WidthRequest="1200" Spacing="0" Orientation="Vertical">
 
         <Frame BackgroundColor="DodgerBlue" Padding="15" CornerRadius="15">
-            <Label Text="Welcome to Allergy Delight!" HorizontalTextAlignment="Center" TextColor="AliceBlue" FontSize="36"/>
+            <Label Text="Welcome to the McDonalds Menu!" HorizontalTextAlignment="Center" TextColor="AliceBlue" FontSize="36"/>
         </Frame>
 
 
@@ -26,7 +26,7 @@
             </Button>
             <Button
                 Text="Brands" TextColor="black" Padding="10" BorderWidth="10" 
-                 Font="Comic Sans ms" FontSize="Small"  CornerRadius="10" Clicked="tools_clicked">
+                 Font="Comic Sans ms" FontSize="Small"  CornerRadius="10" Clicked="brand_clicked">
 
             </Button>
 
