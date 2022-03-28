@@ -281,9 +281,9 @@ namespace AllergyDelight
         {
             await Navigation.PushAsync(new Subway());
         }
-        private async void tools_clicked(object sender, EventArgs e)
+        private async void brand_clicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushAsync(new BrandPage());
         }
 
 
