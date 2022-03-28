@@ -13,12 +13,13 @@ namespace AllergyDelight
     public partial class FilterPage : ContentPage
     {
         //Global variables
-        CheckBox[] checkBoxes = new CheckBox[19];
+        RadioButton[] radioButtons = new RadioButton[19];
+        //CheckBox[] checkBoxes = new CheckBox[19];
         Label[] ingredientLabels = new Label[19];
         string ingredientToCheck;
-        string[] ingredientNames = 
+        string[] ingredientNames =
             {
-            "Wheat", 
+            "Wheat",
             "Rye",
             "Barley",
             "Oats",
@@ -38,30 +39,7 @@ namespace AllergyDelight
             "Molluscs",
             "Lupin",
             };
-       
 
-        //struct Food
-        //{
-        //    public bool wheat;
-        //    public bool rye;
-        //    public bool barley;
-        //    public bool oats;
-        //    public bool spelt;
-        //    public bool kamut;
-        //    public bool soya;
-        //    public bool nuts;
-        //    public bool peanuts;
-        //    public bool sesame;
-        //    public bool milk;
-        //    public bool eggs;
-        //    public bool fish;
-        //    public bool crustaceans;
-        //    public bool celery;
-        //    public bool sulphurDioxideAndSulphites;
-        //    public bool mustard;
-        //    public bool molluscs;
-        //    public bool lupin;
-        //}
 
         public FilterPage()
         {
@@ -71,11 +49,22 @@ namespace AllergyDelight
 
         private void InitilisePage()
         {
-            CreateCheckboxes();
+            CreateRadioButtons();
             CreateFoodLbls();
         }
 
-        
+        private void CreateRadioButtons()
+        {
+            for (int row = 0; row < 19; row++)
+            {
+                radioButtons[row] = new RadioButton();
+                radioButtons[row].SetValue(Grid.RowProperty, row);
+                radioButtons[row].SetValue(Grid.ColumnProperty, 1);
+                radioButtons[row].IsChecked = false;
+                radioButtons[row].CheckedChanged += OnRadioButtonChecked;
+                GrdFilterPage.Children.Add(radioButtons[row]);
+            }
+        }
 
         private void CreateFoodLbls()
         {
@@ -95,50 +84,14 @@ namespace AllergyDelight
             }
         }
 
-        private void CreateCheckboxes()
-        {
-            for (int row = 0; row < 19; row++)
-            {
-                checkBoxes[row] = new CheckBox();
-                checkBoxes[row].SetValue(Grid.RowProperty, row);
-                checkBoxes[row].SetValue(Grid.ColumnProperty, 1);
-                checkBoxes[row].Color = Color.DodgerBlue;
-                checkBoxes[row].IsChecked = false;
-                checkBoxes[row].CheckedChanged += OnCheckBoxCheckedChanged;
-                GrdFilterPage.Children.Add(checkBoxes[row]);
-            }
-        }
 
-        void OnCheckBoxCheckedChanged(object sender, CheckedChangedEventArgs e)
-        {
-            
-            CheckBox curCheckBox = (CheckBox)sender;
-            int curRow = (int)curCheckBox.GetValue(Grid.RowProperty);
 
-            if (curCheckBox.IsChecked == true)
-            {
-                for (int count = 0; count < checkBoxes.Length; count++)
-                {
-                    if (count != curRow)
-                    {
-                        checkBoxes[count].IsEnabled = false;
-                        checkBoxes[count].IsVisible = false;
-                        ingredientLabels[count].IsVisible = false;
-                    }
-                    
-                }
-            }
-            else
-            {
-                for (int count = 0; count < checkBoxes.Length; count++)
-                {
-                    checkBoxes[count].IsEnabled = true;
-                    checkBoxes[count].IsVisible = true;
-                    ingredientLabels[count].IsVisible = true;
-                }
-               
-            }
-           
+        void OnRadioButtonChecked(object sender, CheckedChangedEventArgs e)
+        {
+
+            RadioButton curRadioButton = (RadioButton)sender;
+            int curRow = (int)curRadioButton.GetValue(Grid.RowProperty);
+
             CheckForFood(curRow);
 
         }
@@ -170,11 +123,11 @@ namespace AllergyDelight
         //    }
         //}
 
-      
+
         private async void BtnConfirm_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage(ingredientToCheck));//need something here
-           
+
         }
     }
 }

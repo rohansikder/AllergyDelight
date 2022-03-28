@@ -4,7 +4,7 @@
              x:Class="AllergyDelight.FilterPage"
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
-        <ScrollView>
+        
           <StackLayout BackgroundColor="Gray">
 
                 <Frame BackgroundColor="DodgerBlue" Padding="15" CornerRadius="15" Margin="5,10,5,10">
@@ -24,10 +24,11 @@
                     <!--<Button x:Name="BtnDeselectAll" Text="Deselect All" FontSize="Small" Margin="35,30"   HorizontalOptions="Center" VerticalOptions="Start" Clicked="BtnDeselectAll_Clicked"  CornerRadius="10"/>-->
                 
             </StackLayout>
-
-          <Grid x:Name="GrdFilterPage" BackgroundColor="LightGray">
-
-                <Grid.RowDefinitions>
+             <ScrollView>
+                
+                <Grid x:Name="GrdFilterPage" BackgroundColor="LightGray">
+                    
+                    <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition Height="30"/>
                     <RowDefinition Height="30"/>
@@ -55,8 +56,9 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-            </Grid>
+                </Grid>
+            </ScrollView>
           </StackLayout>
-        </ScrollView>
+       
     </ContentPage.Content>
 </ContentPage>

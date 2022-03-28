@@ -20,12 +20,12 @@
 
             </Button>
             <Button
-                Text="Restaurants" TextColor="black" Padding="10" BorderWidth="10" 
+                Text="Restaurant" TextColor="black" Padding="10" BorderWidth="10" 
                  Font="Comic Sans ms" FontSize="Small" CornerRadius="10" Clicked="restaurants_clicked">
 
             </Button>
             <Button
-                Text="Tools" TextColor="black" Padding="10" BorderWidth="10" 
+                Text="Brands" TextColor="black" Padding="10" BorderWidth="10" 
                  Font="Comic Sans ms" FontSize="Small"  CornerRadius="10" Clicked="tools_clicked">
 
             </Button>
@@ -35,7 +35,7 @@
 
 
         <StackLayout>
-
+          <ScrollView>
             <Grid   
             x:Name="GrdMenuArea" StyleId="menu" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="625" WidthRequest="600" BackgroundColor="White">
 
@@ -92,7 +92,7 @@
                 <Label x:Name="Vegetarian1" Grid.Column="2" Grid.Row="5" Text="V" TextColor="Green" FontSize="Small" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
 
             </Grid>
-            
+          </ScrollView>
         </StackLayout>
 
     </StackLayout>
