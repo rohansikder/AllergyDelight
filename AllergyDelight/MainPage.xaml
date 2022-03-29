@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AllergyDelight.MainPage"
+             BackgroundImageSource="Background.png"
              NavigationPage.HasNavigationBar="false">
 
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightGray" Padding="10"
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="10"
                  HeightRequest="1600" WidthRequest="1200" Spacing="0" Orientation="Vertical">
 
         <Frame BackgroundColor="DodgerBlue" Padding="15" CornerRadius="15">

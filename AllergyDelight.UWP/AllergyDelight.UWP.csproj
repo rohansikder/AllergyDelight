@@ -132,13 +132,14 @@
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="Background.png" />
     <Content Include="LONDASSUBWAY.jpg" />
     <Content Include="McDonaldsLogoFinal.png" />
     <Content Include="MCDONALDTOWN.jpg" />
     <Content Include="McdonaldsMap.png" />
     <Content Include="MCDONALDSSMYTHS.jpg" />
     <Content Include="Properties\Default.rd.xml" />
-    <Content Include="SubwayLogo.png" />
+    <Content Include="SubwayLogo.jpg" />
     <Content Include="SupermacsHeadfordRoad.jpg" />
     <Content Include="Celery.jpg" />
     <Content Include="Crustacean.jpg" />
