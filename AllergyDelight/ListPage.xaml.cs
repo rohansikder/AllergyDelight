@@ -27,10 +27,6 @@ namespace AllergyDelight
         {
             await Navigation.PushAsync(new MainPage());
         }
-        private async void tools_clicked(object sender, EventArgs e)
-        {
-
-        }
 
         private async void mcdoanlds1_clicked(object sender, EventArgs e)
         {

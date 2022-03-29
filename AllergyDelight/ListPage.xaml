@@ -25,11 +25,6 @@
                  Font="Comic Sans ms" FontSize="Small" Clicked="menu_clicked">
                 </Button>
 
-                <Button
-                Text="Tools" TextColor="black" Padding="0" BorderWidth="10" 
-                 Font="Comic Sans ms" FontSize="Small" Clicked="tools_clicked">
-                </Button>
-
             </StackLayout>
 
 

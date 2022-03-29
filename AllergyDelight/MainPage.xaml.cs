@@ -279,7 +279,7 @@ namespace AllergyDelight
         //Sends User to Resturants Page
         private async void restaurants_clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Subway());
+            await Navigation.PushAsync(new Page1());
         }
         private async void brand_clicked(object sender, EventArgs e)
         {

@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AllergyDelight.BrandPage">
+             x:Class="AllergyDelight.BrandPage"
+             NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         
         <StackLayout Orientation="Vertical" >
-            <Frame BackgroundColor="DodgerBlue" Padding="15" CornerRadius="15">
-                <Label Text="Welcome to Allergy Delight!" HorizontalTextAlignment="Center" TextColor="AliceBlue" FontSize="36"/>
+            <Frame BackgroundColor="DodgerBlue" Padding="15" CornerRadius="15" Margin="5">
+                <Label Text="Welcome to Allergy Delight!" HorizontalTextAlignment="Center" TextColor="AliceBlue" FontSize="36" />
             </Frame>
             <ImageButton x:Name="McDonalds" Source="McDonaldsLogoFinal.png" Margin="70,10" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" MinimumHeightRequest="10" Clicked="McDonalds_Clicked"/>
-            <ImageButton x:Name="Subway" Source="SubwayLogo.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" MinimumHeightRequest="10" Clicked="Subway_Clicked"/>
+            <ImageButton x:Name="Subway" Source="SubwayLogo.jpg" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" MinimumHeightRequest="10" Clicked="Subway_Clicked"/>
             <ImageButton x:Name="Supermacs" Source="SupermacsLogo.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" MinimumHeightRequest="10" Clicked="Supermacs_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
