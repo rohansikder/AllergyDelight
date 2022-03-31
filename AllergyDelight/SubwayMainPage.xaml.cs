@@ -35,11 +35,8 @@ namespace AllergyDelight
             "Mustard",
             "Molluscs",
             "Lupin",
+            "Gluten"
             };
-
-
-
-
 
         string[] foodNames =
        {
@@ -51,17 +48,17 @@ namespace AllergyDelight
         };
 
 
-
-
-
-
-
-
-
         public SubwayMainPage()
         {
             InitializeComponent();
             CreateMenu1();
+        }
+
+        public SubwayMainPage(string ingredientToCheck)
+        {
+            InitializeComponent();
+            CreateMenu1();
+            CheckMenu(ingredientToCheck);
         }
 
         private void CreateMenu1()
@@ -86,43 +83,50 @@ namespace AllergyDelight
             }
         }
 
+        private void CheckMenu(string ingredientToCheck) 
+        {
+            int ItalianBMTSub= 1;
+            int EggAndCheeseSub = 2;
+            int VeggieDelightSub = 3;
+            int hasBrowns = 4;
+            int cookies = 5;
 
+            if (ingredientToCheck == ingredientNames[19]) //if gluten
+            {
+                for (int count = 0; count < menuFoodLabels.Length; count++)
+                {
+                    if (menuFoodLabels[count] != menuFoodLabels[1])
+                    {
+                        menuFoodLabels[count].IsVisible = false;
+                    }
+                }
+            }
 
-
+        }
 
         private void DisableStickers(int food)
         {
 
             if (food == 1)
             {
-                BigMacImg1.IsVisible = false;
-                BigMacImg2.IsVisible = false;
-                BigMacImg3.IsVisible = false;
-                BigMacImg4.IsVisible = false;
-                BigMacImg5.IsVisible = false;
+                
             }
             else if (food == 2)
             {
-                OreoMcFlurryImg1.IsVisible = false;
-                OreoMcFlurryImg2.IsVisible = false;
-                OreoMcFlurryImg3.IsVisible = false;
+              
             }
             else if (food == 3)
             {
-                BaconAndEggImg1.IsVisible = false;
-                BaconAndEggImg2.IsVisible = false;
-                BaconAndEggImg3.IsVisible = false;
+               
             }
             else if (food == 4)
             {
-                McPlantImg1.IsVisible = false;
-                McPlantImg2.IsVisible = false;
+                
 
             }
             else if (food == 5)
             {
-                SpicyVeggieImg1.IsVisible = false;
-                SpicyVeggieImg2.IsVisible = false;
+                
             }
 
         }

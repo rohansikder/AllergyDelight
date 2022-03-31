@@ -4,10 +4,61 @@
              x:Class="AllergyDelight.SubwayFilterPage"
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Subway Filter Page Placeholder"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+        <StackLayout BackgroundColor="Gray">
+
+            <Frame BackgroundColor="DodgerBlue" Padding="15" CornerRadius="15" Margin="5,10,5,10">
+                <Label Text="McDonalds Allergy Filter" HorizontalTextAlignment="Center" TextColor="AliceBlue" FontSize="36"/>
+            </Frame>
+
+            <!--Buttons-->
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Please Select Ingredients:"  Margin="30,15,30,23" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Start"/>
+                <Button x:Name="BtnConfirm" Text="Confirm" FontSize="Small" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Start" Clicked="BtnConfirm_Clicked"  CornerRadius="10"/>
+                <Button x:Name="BtnCancel" Text="Cancel" FontSize="Small"  HorizontalOptions="Center" VerticalOptions="Start" Clicked="BtnCancel_Clicked" Margin="0,0,10,0"  CornerRadius="10"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Ingredients" FontSize="30" Margin="10,35,10,10"  HorizontalOptions="Start" VerticalOptions="Start"/>
+                <!--<Button x:Name="BtnSelectAll" Text="Select All" FontSize="Small" Margin="1,30"  WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Start" Clicked="BtnSelectAll_Clicked"/>-->
+                <!--<Button x:Name="BtnDeselectAll" Text="Deselect All" FontSize="Small" Margin="35,30"   HorizontalOptions="Center" VerticalOptions="Start" Clicked="BtnDeselectAll_Clicked"  CornerRadius="10"/>-->
+
+            </StackLayout>
+            <ScrollView>
+
+                <Grid x:Name="GrdSubwayFilterPage" BackgroundColor="LightGray">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                </Grid>
+            </ScrollView>
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>
