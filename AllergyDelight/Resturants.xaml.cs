@@ -29,7 +29,7 @@ namespace AllergyDelight
         //Send user to HomePage
         async private void BackToHomeClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new BrandPage());
         }
     }
 }
