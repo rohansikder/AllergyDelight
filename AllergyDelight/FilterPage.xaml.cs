@@ -85,7 +85,6 @@ namespace AllergyDelight
         }
 
 
-
         void OnRadioButtonChecked(object sender, CheckedChangedEventArgs e)
         {
 
@@ -105,24 +104,6 @@ namespace AllergyDelight
         {
             await Navigation.PushAsync(new MainPage());
         }
-
-
-        //private void BtnSelectAll_Clicked(object sender, EventArgs e)
-        //{
-        //    for (int row = 0; row < checkBoxes.Length; row++)
-        //    {
-        //        checkBoxes[row].IsChecked = true;
-        //    }
-        //}
-
-        //private void BtnDeselectAll_Clicked(object sender, EventArgs e)
-        //{
-        //    for (int row = 0; row < checkBoxes.Length; row++)
-        //    {
-        //        checkBoxes[row].IsChecked = false;
-        //    }
-        //}
-
 
         private async void BtnConfirm_Clicked(object sender, EventArgs e)
         {

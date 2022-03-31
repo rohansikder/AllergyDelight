@@ -47,7 +47,7 @@ namespace AllergyDelight
             CreateMenu();
         }
 
-        public MainPage(string ingredientToCheck)//need change
+        public MainPage(string ingredientToCheck)
         {
             InitializeComponent();
             CreateMenu();
@@ -142,29 +142,13 @@ namespace AllergyDelight
             }
             else if (ingredientToCheck == ingredientNames[11]) //if ingred is eggs 
             {
-                //For bacon and big mac
-                for (int count = 0; count < menuFoodLabels.Length; count++)
-                {
-                    if (count == 0 || count == 3) 
-                    {
-                        menuFoodLabels[count].IsVisible = true;
-                    }
-                    else
-                    {
-                        menuFoodLabels[count].IsVisible = false;
-                    }
+                menuFoodLabels[0].IsVisible = false;
+                menuFoodLabels[3].IsVisible = false;
 
-                    Vegan1.IsVisible = false;
-                    Vegan2.IsVisible = false;
-                    Vegetarian1.IsVisible = false;
+                DisableStickers(bigMac);
+                DisableStickers(baconAndEgg);
+                
 
-                    
-                    DisableStickers(mcFlurryOreo);
-                    DisableStickers(mcPlant);
-                    DisableStickers(spicyVeggie);
-
-
-                }
             }
             else if (ingredientToCheck == ingredientNames[9]) //if ingred is sesame 
             {

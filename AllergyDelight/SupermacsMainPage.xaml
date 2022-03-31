@@ -20,11 +20,6 @@
         <StackLayout x:Name="BG" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Padding="30">
 
             <Button
-               BackgroundColor="DarkRed" Text="Fliter" TextColor="White" Padding="10" BorderWidth="10" 
-                 Font="Comic Sans ms" FontSize="Small" CornerRadius="10" Clicked="filter_clicked">
-
-            </Button>
-            <Button
                 BackgroundColor="DarkRed" Text="Restaurant" TextColor="White" Padding="10" BorderWidth="10" 
                  Font="Comic Sans ms" FontSize="Small" CornerRadius="10" Clicked="restaurants_clicked">
 
