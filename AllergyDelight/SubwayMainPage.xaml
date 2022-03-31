@@ -8,7 +8,7 @@
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="10"
                  HeightRequest="1600" WidthRequest="1200" Spacing="0" Orientation="Vertical">
 
-        <Frame BackgroundColor="DodgerBlue" Padding="15" CornerRadius="15">
+        <Frame BackgroundColor="Green" Padding="15" CornerRadius="15">
             <Label Text="Welcome to the Subway Menu!" HorizontalTextAlignment="Center" TextColor="AliceBlue" FontSize="36"/>
         </Frame>
 
@@ -16,17 +16,17 @@
         <StackLayout x:Name="BG" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Padding="30">
 
             <Button
-                Text="Fliter" TextColor="black" Padding="10" BorderWidth="10" 
+               BackgroundColor="Gold" Text="Fliter" TextColor="Black" Padding="10" BorderWidth="10" 
                  Font="Comic Sans ms" FontSize="Small" CornerRadius="10" Clicked="filter_clicked">
 
             </Button>
             <Button
-                Text="Restaurant" TextColor="black" Padding="10" BorderWidth="10" 
+               BackgroundColor="Gold" Text="Restaurant" TextColor="Black" Padding="10" BorderWidth="10" 
                  Font="Comic Sans ms" FontSize="Small" CornerRadius="10" Clicked="restaurants_clicked">
 
             </Button>
             <Button
-                Text="Brands" TextColor="black" Padding="10" BorderWidth="10" 
+               BackgroundColor="Gold" Text="Brands" TextColor="Black" Padding="10" BorderWidth="10" 
                  Font="Comic Sans ms" FontSize="Small"  CornerRadius="10" Clicked="brand_clicked">
 
             </Button>
