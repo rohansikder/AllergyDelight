@@ -13,8 +13,9 @@
             <ImageButton Source="Supermacs.png"></ImageButton>
             <!--I will make Button redirect to Google Maps if user wants to open in native google maps-->
 
-            <StackLayout Padding="20">
-                <Button TextColor="black" Text="Back To Home" HorizontalOptions="End" Padding="5" Clicked="BackToHomeClicked"  CornerRadius="9"></Button>
+            <ScrollView>
+                <StackLayout Padding="20">
+                <Button TextColor="black" Text="Brand Page" HorizontalOptions="End" Padding="5" Clicked="BackToHomeClicked"  CornerRadius="9"></Button>
                 <Label TextColor="black" Text="Resturant Info:" HorizontalTextAlignment="Start" FontSize="23"/>
                 <Button TextColor="black" Text="Menu" HorizontalOptions="Start" Font="20" Padding="5" Clicked="BackToHomeClicked"  CornerRadius="9"/>
                 <Button TextColor="black" Text="Ingredients" HorizontalOptions="Start" Font="20" Padding="5" Clicked="filter_clicked"  CornerRadius="9"/>
@@ -36,7 +37,7 @@
                 </Label>
 
             </StackLayout>
-
+           </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
